@@ -1,13 +1,8 @@
 <template>
-  <div class="">
-<ol class="list-none list-inside flex justify-between">
-  <li><RouterLink to="/">home</RouterLink></li>
-  <li><RouterLink to="/">about</RouterLink></li>
-  <li><RouterLink to="/">design</RouterLink></li>
-  <li><RouterLink to="/">contact</RouterLink></li>
-</ol>
-  </div>
+  <img src="../assets/images/checkers.png" alt=""/>
+  <Carousel/>
 </template>
 
 <script setup lang="ts">
+import Carousel from "./fx/Carousel.vue";
 </script>

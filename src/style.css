@@ -2,15 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-template {
-    background-color: #EBE6E6;
+:root {
+--background: #F1F1F1;
+--coal: #181818;
+--light-coal: #1E1E1E;
+--pink: #E9CAD4;
+--dark-pink: #D894AB;
+--platinum: #D9D9D9;
+}
+
+body {
+    background-color: var(--background);
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.box {
+    border-radius: 10px;
+    border-color: var(--coal);
+    border-width: thick;
+}
+
+.menu:hover {
+    cursor: pointer;
 }
 
 @layer base {
     @font-face {
         font-family: 'Manrope';
-        src: url('@/assets/fonts/.woff2') format('woff2'), url('@/assets/fonts/Inter-Regular.woff')
-        format('woff');
+        src: url('./assets/fonts/manrope/Manrope-Medium.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SquadaOne';
+        src: url('./assets/fonts/squadaOne/SquadaOne-Regular.ttf') format('truetype');
         font-weight: 400;
         font-style: normal;
     }
