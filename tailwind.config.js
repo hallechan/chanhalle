@@ -5,18 +5,25 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        manrope: ['Manrope', 'sans-serif'],
-        squadaOne: ['SquadaOne', 'sans-serif']
+        dmSans: ['DMSans', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       colors: {
-        'background': '#F1F1F1',
-        'coal': '#181818',
-        'light-coal': '#1E1E1E',
-        'pink': '#E9CAD4',
-        'dark-pink': '#D894AB',
-        'platinum': '#D9D9D9'
+        'background': '#EEEEEE',
+        'coal': '#141414',
+        'light-coal': '#202020',
+        'dark-pink': '#DCA3B1',
+        'platinum': '#F8F8F8',
+        'grey': '#888888'
       },
+      lineHeight: {
+        'extra-tight': '0.95',
+      }
     },
+    letterSpacing: {
+      evenTighter: '-.050em',
+      tightest: '-.075em',
+    }
   },
   plugins: [
     require('tailwindcss-animated')

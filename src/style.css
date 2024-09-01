@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 :root {
---background: #F1F1F1;
---coal: #181818;
---light-coal: #1E1E1E;
---pink: #E9CAD4;
---dark-pink: #D894AB;
---platinum: #D9D9D9;
+    --background: #EEEEEE;
+    --coal: #141414;
+    --light-coal: #202020;
+    --dark-pink: #DCA3B1;
+    --dark-pink-translucent: rgba(220, 163, 177, 0.66);
+    --platinum: #F8F8F8;
+    --grey: #888888;
+    --transparent: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -24,27 +26,75 @@ img {
     -ms-user-select: none;
 }
 
-.box {
-    border-radius: 10px;
-    border-color: var(--coal);
-    border-width: thick;
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px 20px var(--transparent);
+    }
+    50% {
+        box-shadow: 0 0 10px 10px var(--dark-pink-translucent);
+    }
 }
 
-.menu:hover {
-    cursor: pointer;
+.glow-effect {
+    animation: glow 3s infinite;
 }
+
 
 @layer base {
     @font-face {
-        font-family: 'Manrope';
-        src: url('./assets/fonts/manrope/Manrope-Medium.ttf') format('truetype');
+        font-family: 'DMSans';
+        src: url('./assets/fonts/dmSans/DMSans-Regular.ttf') format('truetype');
         font-weight: 400;
         font-style: normal;
     }
     @font-face {
-        font-family: 'SquadaOne';
-        src: url('./assets/fonts/squadaOne/SquadaOne-Regular.ttf') format('truetype');
+        font-family: 'DMSans';
+        src: url('./assets/fonts/dmSans/DMSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'DMSans';
+        src: url('./assets/fonts/dmSans/DMSans-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'DMSans';
+        src: url('./assets/fonts/dmSans/DMSans-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        src: url('./assets/fonts/inter/Inter-Regular.ttf') format('truetype');
         font-weight: 400;
         font-style: normal;
     }
+    @font-face {
+        font-family: 'Inter';
+        src: url('./assets/fonts/inter/Inter-Italic.ttf') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'Inter';
+        src: url('./assets/fonts/inter/Inter-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Inter';
+        src: url('./assets/fonts/inter/Inter-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Inter';
+        src: url('./assets/fonts/inter/Inter-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
 }
