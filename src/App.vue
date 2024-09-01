@@ -1,20 +1,17 @@
 <template>
-  <Navigation/>
-  <MenuButton/>
-  <Home/>
-  <Projects/>
+  <Navigation />
+  <div>
+    <router-view name="home"></router-view>
+    <router-view name="projects"></router-view>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
 import Navigation from "./components/Navigation.vue";
-import Home from "./components/Home.vue";
-import {defineComponent} from "vue";
-import MenuButton from "./components/MenuButton.vue";
-import Projects from "./components/Projects.vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  components: {Projects, MenuButton, Navigation, Home}
-})
-
-
+  components: { Navigation }
+});
 </script>
