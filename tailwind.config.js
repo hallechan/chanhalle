@@ -10,6 +10,7 @@ export default {
       },
       colors: {
         'background': '#EEEEEE',
+        'background-header': '#E9E9E9',
         'coal': '#141414',
         'light-coal': '#202020',
         'dark-pink': '#DCA3B1',
@@ -21,6 +22,7 @@ export default {
       }
     },
     letterSpacing: {
+      tighter: '-.03em',
       evenTighter: '-.050em',
       tightest: '-.075em',
     }

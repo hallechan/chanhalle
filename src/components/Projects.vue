@@ -5,7 +5,7 @@
 
         <!-- Project 1: MakeNOTE -->
         <h4 class="font-inter font-semibold tracking-evenTighter text-5xl text-platinum mb-8">new email. who dis?</h4>
-        <li class="flex flex-row justify-between my-12">
+        <li class="flex flex-row justify-between my-12 hover:cursor-pointer">
           <div
               class="relative w-2/5 h-2/5"
               @mouseover="hoverIndex = 0"
@@ -75,7 +75,7 @@
               </p>
             </div>
             <p class="font-inter text-lg text-platinum tracking-tight max-w-lg break-words ">
-              Modelling a sustainable, efficient, slate for fast-moving studies.
+              [Case study coming soon.] Modelling a sustainable, efficient, slate for fast-moving studies.
             </p>
           </div>
         </li>
