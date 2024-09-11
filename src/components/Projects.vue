@@ -85,17 +85,20 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue';
+import { RouteLocationRaw } from 'vue-router';
+
+export default defineComponent({
   data() {
     return {
       hoverIndex: -1,
     };
   },
   methods: {
-    goToProject(route) {
+    goToProject(route: RouteLocationRaw) {
       this.$router.push(route);
     }
   }
-};
+});
 </script>
