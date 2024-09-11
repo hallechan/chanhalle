@@ -11,7 +11,7 @@
         <a :class="{'text-dark-pink': route.path === '/cv'}" class="hover:text-grey" href="/cv">cv</a>
       </li>
     </ul>
-    <img class="size-1/6 mt-16" src="../assets/images/topheart.png" alt=""/>
+    <img class="size-1/6 mt-16" src="../assets/images/topheart.png" alt="A logo of an adorned heart."/>
   </div>
 </template>
 
