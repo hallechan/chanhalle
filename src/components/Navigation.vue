@@ -8,7 +8,9 @@
         <a :class="{'text-dark-pink': route.path === '/abt'}" class="hover:text-grey" href="/abt">about</a>
       </li>
       <li>
-        <a :class="{'text-dark-pink': route.path === '/cv'}" class="hover:text-grey" href="/cv">cv</a>
+        <a class="hover:text-dark-pink"
+           href="https://drive.google.com/file/d/1SMFG_NmWDz_Jwe9WgfxOhtPI2ZFNCXLu/view?usp=sharing"
+           target="_blank">cv</a>
       </li>
     </ul>
     <img class="size-1/6 mt-16" src="../assets/images/topheart.png" alt="A logo of an adorned heart."/>
