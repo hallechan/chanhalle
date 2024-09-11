@@ -2,7 +2,7 @@
 
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from './components/Home.vue';
-import Projects from './components/Projects.vue';
+import Projects from "./components/Projects.vue";
 import About from './components/About.vue';
 import MakeNOTE from "./components/projects/MakeNOTE.vue";
 
@@ -21,7 +21,8 @@ const routes = [
     {
         path: '/makenote',
         component: MakeNOTE
-    }
+    },
+    { path: '/:pathMatch(.*)*', redirect: '/' }
 ];
 
 const router = createRouter({
