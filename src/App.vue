@@ -1,5 +1,6 @@
 <template>
   <Navigation />
+  <Analytics />
   <div>
     <router-view name="home"></router-view>
     <router-view name="projects"></router-view>
@@ -9,9 +10,10 @@
 
 <script>
 import Navigation from "./components/Navigation.vue";
+import { Analytics } from '@vercel/analytics/react';
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  components: { Navigation }
+  components: { Navigation, Analytics }
 });
 </script>
