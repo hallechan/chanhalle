@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center mt-4">
-    <ul class="flex flex-row items-center justify-between font-inter font-medium text-xl tracking-tightest w-64">
+    <ul class="flex flex-row items-center justify-between font-inter font-medium text-xl tracking-tightest w-96">
       <li>
         <a
             :class="{'text-dark-pink': route.path === '/'}"
@@ -16,6 +16,14 @@
             href="/abt"
             @click="trackPageView('/abt')"
         >about</a>
+      </li>
+      <li>
+        <a
+            :class="{'text-dark-pink': route.path === '/design'}"
+            class="hover:text-grey"
+            href="/design"
+            @click="trackPageView('/design')"
+        >design</a>
       </li>
       <li>
         <a

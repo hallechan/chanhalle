@@ -3,6 +3,7 @@ import Home from './components/Home.vue';
 import Projects from './components/Projects.vue';
 import About from './components/About.vue';
 import MakeNOTE from './components/projects/MakeNOTE.vue';
+import Design from "./components/Design.vue";
 
 const routes = [
     {
@@ -15,6 +16,10 @@ const routes = [
     {
         path: '/abt',
         component: About
+    },
+    {
+        path: '/design',
+        component: Design
     },
     {
         path: '/makenote',
