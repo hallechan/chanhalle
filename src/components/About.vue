@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row items-center md:items-start max-w-4xl">
       <div class="md:flex-1 text-center md:text-left w-3/4">
         <div class="animate-fade-up">
-        <h1 class="text-6xl font-dmSans font-semibold tracking-tightest mb-2">hello, i’m halle.</h1>
+        <h1 class="text-6xl font-dmSans font-semibold tracking-tightest mb-2">hello, i’m <span class="font-smooch text-8xl font-normal">halle.</span></h1>
         <p class="font-dmSans font-medium tracking-tightest text-grey text-lg mb-4">pronounced ha-lee or hay-lee</p>
         </div>
         <div class="text-coal font-inter text-xl tracking-evenTighter animate-fade-up animate-delay-500 my-8">
