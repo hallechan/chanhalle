@@ -6,27 +6,55 @@
         sometimes i put them here.
       </h4>
     </div>
-    <div v-if="designs.length" class="w-1/2 grid grid-cols-1 md:grid-cols-2 gap-12 animate-fade-up animate-delay-500">
-      <div v-for="design in designs" :key="design.name" class="relative group">
-        <img :src="design.path" :alt="design.name" class="w-full aspect-square object-cover" />
+    <div class="w-1/2 grid grid-cols-1 md:grid-cols-2 gap-12 animate-fade-up animate-delay-500">
+      <div class="relative group">
+        <img src="../assets/images/gallery/cupid.png" alt="cupid" class="w-full aspect-square object-cover" />
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <p class="text-platinum font-inter text-lg">{{ design.name }}</p>
+          <p class="text-platinum font-inter text-lg">cupid</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="../assets/images/gallery/elixir.png" alt="elixir" class="w-full aspect-square object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-platinum font-inter text-lg">elixir</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="../assets/images/gallery/golden.png" alt="golden" class="w-full aspect-square object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-platinum font-inter text-lg">golden</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="../assets/images/gallery/kitchen.png" alt="kitchen" class="w-full aspect-square object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-platinum font-inter text-lg">kitchen</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="../assets/images/gallery/laundry.png" alt="laundry" class="w-full aspect-square object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-platinum font-inter text-lg">laundry</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="../assets/images/gallery/lunar.png" alt="lunar" class="w-full aspect-square object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-platinum font-inter text-lg">lunar</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="../assets/images/gallery/melody.png" alt="melody" class="w-full aspect-square object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-platinum font-inter text-lg">melody</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="../assets/images/gallery/renee.png" alt="renee" class="w-full aspect-square object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-platinum font-inter text-lg">renee</p>
         </div>
       </div>
     </div>
-    <div v-else class="text-center text-light-coal font-inter">
-      <p>No designs to display. Please check your images folder.</p>
-    </div>
   </div>
 </template>
-
-<script setup lang="ts">
-const images = import.meta.glob<Record<string, { default: string }>>('../assets/images/gallery/*.png', { eager: true });
-
-const designs = Object.entries(images).map(([path, module]) => ({
-  name: path.split('/').pop()?.replace('.png', ''),
-  path: module.default || (module as unknown as string),
-}));
-
-console.log('Loaded designs:', designs);
-</script>
