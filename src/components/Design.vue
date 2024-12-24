@@ -21,11 +21,11 @@
 </template>
 
 <script setup lang="ts">
-const images = import.meta.glob('../assets/images/gallery/*.png', { eager: true });
+const images = import.meta.glob<Record<string, { default: string }>>('../assets/images/gallery/*.png', { eager: true });
 
 const designs = Object.entries(images).map(([path, module]) => ({
   name: path.split('/').pop()?.replace('.png', ''),
-  path: module.default || module,
+  path: module.default || (module as unknown as string),
 }));
 
 console.log('Loaded designs:', designs);
