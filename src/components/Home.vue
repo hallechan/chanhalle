@@ -2,7 +2,7 @@
   <div class="bg-background min-h-screen">
   <div class="flex flex-col items-center">
     <div class="mt-8">
-    <h1 class="font-dmSans font-semibold tracking-tightest text-7xl text-light-coal selection:text-dark-pink text-center">halle chan</h1>
+    <h1 class="font-smooch tracking-tighter text-9xl leading-extra-tight text-light-coal selection:text-dark-pink text-center">halle chan</h1>
     <h4 class="font-inter text-3xl leading-extra-tight tracking-evenTighter text-light-coal text-center max-w-96 break-words">
       is a
       <span class="text-dark-pink">designer</span>

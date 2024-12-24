@@ -7,6 +7,7 @@ export default {
       fontFamily: {
         dmSans: ['DMSans', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        smooch: ['Smooch', 'sans-serif'],
       },
       colors: {
         'background': '#EEEEEE',

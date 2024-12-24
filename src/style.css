@@ -43,6 +43,12 @@ img {
 
 @layer base {
     @font-face {
+        font-family: 'Smooch';
+        src: url('./assets/fonts/smooch/Smooch-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
         font-family: 'DMSans';
         src: url('./assets/fonts/dmSans/DMSans-Regular.ttf') format('truetype');
         font-weight: 400;
