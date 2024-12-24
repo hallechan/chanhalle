@@ -24,6 +24,9 @@
     </div>
     <div class="flex flex-col md:flex-row items-start max-w-4xl">
     <div class="text-coal font-inter text-xl tracking-evenTighter animate-fade-up animate-delay-500">
+      <p class="mb-6">
+        I'm also incoming at Miovision as a <span class="text-dark-pink">Software Developer (Co-Op)</span> in Product Engineering.
+      </p>
     <p class="mb-6">
       I adore making products that boast our super nifty individuality.
     </p>
